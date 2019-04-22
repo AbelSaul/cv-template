@@ -42,6 +42,10 @@ export default {
    */
   modules: [],
 
+  router: {
+    base: process.env.BASE_URL || "/"
+  },
+
   /*
    ** Build configuration
    */
