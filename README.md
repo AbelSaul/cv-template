@@ -2,6 +2,8 @@
 
 > My curriculum vitae template
 
+See example here: http://mhyfritz.com/cv-template/
+
 ## Build Setup
 
 ```bash
