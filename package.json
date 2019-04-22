@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "docs": "cross-env BASE_URL=/cv-template/ npm run build && rimraf docs && ncp dist docs"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
@@ -17,6 +18,8 @@
     "nuxt": "^2.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "ncp": "^2.0.0",
+    "nodemon": "^1.18.9",
+    "rimraf": "^2.6.3"
   }
 }
