@@ -1,0 +1,22 @@
+{
+  "name": "cv-template",
+  "version": "1.0.0",
+  "description": "My curriculum vitae template",
+  "author": "Markus Hsi-Yang Fritz",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "js-yaml-loader": "^1.0.1",
+    "minireset.css": "0.0.4",
+    "nuxt": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

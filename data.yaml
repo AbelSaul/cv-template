@@ -1,0 +1,91 @@
+name: Simon Benjamin Quitzon
+image: image.png
+themeColor: "#ef1144"
+heading: Curriculum vitae
+
+contact:
+  - value:
+      - 57305 Buckridge Radial
+      - Lake Ethamouth, CA
+      - USA
+    iconClasses:
+      - fas
+      - fa-home
+  - value:
+      - 389-388-4230
+    iconClasses:
+      - fas
+      - fa-mobile-alt
+    type: phone
+  - value:
+      - 066-967-9340
+    iconClasses:
+      - fas
+      - fa-phone
+    type: phone
+  - value:
+      - simon.quitzon@hotmail.com
+    iconClasses:
+      - fas
+      - fa-at
+    type: email
+  - value:
+      - <a href="https://simon-quitzon.com">simon-quitzon.com</a>
+    iconClasses:
+      - fas
+      - fa-link
+    type: url
+
+sections:
+  - title: Personal information
+    entries:
+      - - Name
+        - - Simon Benjamin Quitzon
+      - - Date of birth
+        - - 24th Nov 1990
+      - - Place of birth
+        - - Lake Ethamouth, USA
+      - - Nationality
+        - - USA
+      - - Marital status
+        - - Married
+  - title: Work experience
+    entries:
+      - - 2015–present
+        - - Software Engineer, Dibbert and Sons LLC, Lake Paxton, NY.
+          - "Design and implementation of a complex single-page application for
+            E-commerce. Main tools used: Javascript/React, HTML5, Sass, Sketch."
+  - title: Education
+    entries:
+      - - 2010–2015
+        - - Master's Degree, Stanford University (USA).
+          - M.S. studies in Computer Science.
+  - title: Master's thesis
+    entries:
+      - - Title
+        - - "Rooter: A Methodology for the Typical Unification of Access Points and Redundancy"
+      - - Supervisor
+        - - Prof. Darlene Jenkins
+      - - Description
+        - - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras nec blandit nibh. In hac habitasse platea dictumst.
+            Duis sagittis velit et nisl ultrices ultricies.
+            Maecenas porta sollicitudin erat.
+  - title: Languages
+    entries:
+      - - English
+        - - Native
+      - - French
+        - - Fluent
+  - title: Computer skills
+    entries:
+      - - Languages
+        - - C, Python, Bash
+      - - Software development
+        - - Git, Docker, agile methods (Scrum, Kanban)
+      - - Databases
+        - - SQL, MongoDB
+  - title: Prizes & Honors
+    entries:
+      - - 2015
+        - - Davis Award for outstanding master's thesis
