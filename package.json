@@ -5,23 +5,31 @@
   "author": "Markus Hsi-Yang Fritz",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "docs": "cross-env BASE_URL=/cv-template/ npm run build && rimraf docs && ncp dist docs"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "docs": "npm run build && rimraf docs && ncp dist docs"
   },
   "dependencies": {
+    "core-js": "^2.6.5",
     "cross-env": "^5.2.0",
     "js-yaml-loader": "^1.0.1",
     "minireset.css": "0.0.4",
-    "nuxt": "^2.4.0"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
     "husky": "^1.3.1",
     "ncp": "^2.0.0",
     "nodemon": "^1.18.9",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "vue-template-compiler": "^2.5.21"
   },
   "husky": {
     "hooks": {

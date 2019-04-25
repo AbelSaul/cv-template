@@ -4,17 +4,22 @@
 
 See an example here: http://mhyfritz.com/cv-template/
 
-## Build Setup
+## Project setup
 
-```bash
-# install dependencies
-$ npm install
+```
+npm install
+```
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### Compiles and hot-reloads for development
 
-# build into dist/
-$ npm run build
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
 ```
 
 ![](screenshot.png)

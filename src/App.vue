@@ -2,14 +2,14 @@
   <div class="cv-container">
     <header class="cv-header">
       <div style="flex: 1;">
-        <img v-if="cv.image" class="cv-image" :src="cv.image" alt>
+        <img v-if="cv.image" class="cv-image" :src="cv.image" alt />
         <h1 class="cv-name">{{ cv.name }}</h1>
         <h2 v-if="cv.heading" class="cv-title">{{ cv.heading }}</h2>
       </div>
       <table class="cv-contact">
-        <tr v-for="c in cv.contact">
+        <tr v-for="(c, i) in cv.contact" :key="i">
           <td>
-            <div v-for="line in c.value" v-html="line"></div>
+            <div v-for="(line, i) in c.value" v-html="line" :key="i"></div>
           </td>
           <td>
             <i :class="c.iconClasses"></i>
@@ -18,21 +18,29 @@
       </table>
     </header>
     <main>
-      <section v-for="s in cv.sections">
+      <section v-for="(s, i) in cv.sections" :key="i">
         <table>
           <thead>
             <tr>
               <th>
-                <div class="cv-table-line" :style="{backgroundColor: cv.themeColor}"></div>
+                <div
+                  class="cv-table-line"
+                  :style="{ backgroundColor: cv.themeColor }"
+                ></div>
               </th>
               <th>{{ s.title }}</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="entry in s.entries">
+            <tr v-for="(entry, i) in s.entries" :key="i">
               <td v-html="entry[0]"></td>
               <td>
-                <p v-for="(p, i) in entry[1]" :class="{'cv-row-sub': i > 0}" v-html="p"></p>
+                <p
+                  v-for="(p, i) in entry[1]"
+                  :class="{ 'cv-row-sub': i > 0 }"
+                  v-html="p"
+                  :key="i"
+                ></p>
               </td>
             </tr>
           </tbody>
